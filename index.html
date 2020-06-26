@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <h1> Restaurant orders</h1>
+  <BR><BR><BR><BR><BR> As you may have seen in the local pamdemic that restaurants are going out of buisiness and this website is trying to stop that. So here is how it works you will enter the restaurant you want to order from in the textbox below, then you click submit and then the number of the restauraunt will be availible and you can call them on your phone and get your food!<br><br><br><br><br>
+ <body>
+
+  <form>
+  <select name="opt" id="optVal" >
+    <option value= "none">Please Select Your Option</option>
+    <option value="Pizzahut">Pizzahut</option>
+    <option value="Wendys">Wendys</option>
+    <option value="TacoBell">TacoBell</option>
+    <option value="Chipotle">Chipotle</option>
+    <option value="BJs">BJs</option>
+    <option value="Hot Pot">Hot Pot</option>
+    <option value="Chaat Bhavan"> Chat Bhavan</option>
+    </select>
+</form>
+
+
+   <button onclick="myFunction()">Submit</button>
+
+    <br><br><br><br><br><br>
+    <h1> Local Farmers Orders</h1><br><br><br>
+    As you may have seen above that you can order items from restaraunts now in this section you are going to enter your zip code in the bottom text area to find your local farmers. Then you will find a textbox showing the farmers and you can choose one and find out whereyou can get their products. Lets get started!<br><br><br><br>
+    
+    <script>
+      function myFunction()
+      {
+        var valu = document.getElementById("optVal").value;
+        
+        if (valu === "Pizzahut")
+        {
+          window.location.assign("https://www.bing.com/search?q=Pizzahut+number&PC=U316&FORM=CHROMN")
+        }
+        else if (valu === "Wendys")
+        {
+          window.location.assign("https://www.bing.com/search?q=wendys+number&PC=U316&FORM=CHROMN")
+        }
+      else if (valu === "TacoBell")
+        {
+          window.location.assign("https://www.bing.com/search?q=taco+bell+number&PC=U316&FORM=CHROMN")
+          
+        }
+          else if (valu === "Chipotle")
+        {
+          window.location.assign("https://www.bing.com/search?q=chipotle+number&PC=U316&FORM=CHROMN")
+        }
+          else if (valu === "BJs")
+        {
+          window.location.assign("https://www.bing.com/search?q=bjs+number&PC=U316&FORM=CHROMN")
+        }
+        else if (valu === "Hot Pot")
+        {
+          window.location.assign("https://www.bing.com/search?q=hot+pot+number&PC=U316&FORM=CHROMN")
+        }
+         else if (valu === "Chaat Bhavan")
+        {
+          window.location.assign("https://www.bing.com/search?q=chaat%20bhavan%20number&qs=n&form=QBRE&sp=-1&ghc=1&pq=chaat%20bhavan%20number&sc=1-19&sk=&cvid=315084358CBE48BA86908FFA17F04D6E")
+        }
+}
+
+  
+
+    </script>
+
+   
+    <form>
+      <select name="opt1" id="zip">
+        <option value="nothing">  Please select your choice </button>
+        <option value="95129">95129</option>
+        <option value="94027"> 94027 </option>
+        <option value="94028"> 94028 </option>
+        <option value="94528"> 94528 </option>
+        <option value="94563"> 94563 </option>
+         <option value="94506"> 94506 </option>
+        <option value="94507"> 94507 </option>
+        <option value="94022"> 94022 </option>
+        <option value="94024"> 94024 </option>
+        <option value="95070"> 95070 </option>
+        <option value="95030"> 95030 </option>
+        </select>
+        </form>
+        <button onclick="thefunction()"> Submit</button>
+        <script>
+          function thefunction()
+      {
+        var valu === document.getElementById("zip").value;
+        
+        if (valu === "95129")
+        {
+          window.location.assign("https://www.google.com/")
+        }
+        else if (valu === "94027")
+        {
+          window.location.assign("https://www.yelp.com/search?find_desc=Farmers+Market&find_loc=ATERTHON")
+          else if(valu === "94028")
+          {
+            window.iocation.assign("https://sf.curbed.com/2015/11/20/9897826/listing-the-top-ten-most-affluent-zip-codes-in-the-bay-area")
+
+
+          }
+  
+}
+</script>
+
+
+  </body>
+</html>
